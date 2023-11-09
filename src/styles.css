@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Respaldo de tipos */
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+/* 
+font-family: 'Domine', serif;
+font-family: 'Inter', sans-serif;
+ */
+
+@font-face {
+    font-family: 'Clearface';
+    src: url('./fonts/ITCClearface.woff')format("woff");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+
+h1 {
+    font-family: 'Clearface', 'Domine', serif;
+}
