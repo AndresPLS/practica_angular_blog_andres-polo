@@ -1,1 +1,13 @@
-<p>lista-posts works!</p>
+<article class="post">
+    <div class="postContainer">
+        <h3 class="postTitulo">{{onePost.titulo}}</h3>
+        <figure>
+            <img [src]="onePost.imagen" alt="category figure">
+        </figure>
+
+        <div class="postSubtitulo">
+            <h4>{{onePost.autor}}</h4>
+            <p>{{onePost.ubicacion}}</p>
+        </div>
+    </div>
+</article>

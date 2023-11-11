@@ -1,0 +1,27 @@
+.postContainer {
+
+    & figure {
+        margin: 0 0 8px 0;
+    }
+
+
+    & h3,
+    h4 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        text-transform: uppercase;
+        margin-bottom: 0rem;
+    }
+
+    & p {
+        font-size: 0.7em;
+        color: rgb(93, 93, 93);
+        font-weight: 300;
+    }
+
+}
+
+.postTitulo {
+    padding-bottom: 8px;
+}
