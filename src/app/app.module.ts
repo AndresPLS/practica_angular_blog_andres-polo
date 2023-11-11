@@ -7,6 +7,7 @@ import { PostsComponent } from './pages/posts/posts.component';
 import { NewComponent } from './pages/new/new.component';
 import { ListaPostsComponent } from './components/lista-posts/lista-posts.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     PostsComponent,
     NewComponent,
     ListaPostsComponent,
-    FormularioComponent
+    FormularioComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
