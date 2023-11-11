@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { IPost } from 'src/app/interfaces/post-interface';
+import { PostsService } from 'src/app/services/posts.service';
 
 @Component({
   selector: 'app-posts',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent {
+
+  arrPosts: IPost[] = [];
+
+  postsService = inject(PostsService)
+
+  ngOnInit() {
+    this.arrPosts = this.postsService.getAll();
+  }
 
 }

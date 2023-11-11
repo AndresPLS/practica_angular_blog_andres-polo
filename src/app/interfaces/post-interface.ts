@@ -6,4 +6,5 @@ export interface IPost {
     texto: string;
     fecha: string;
     categoria: string;
+    ubicacion: string;
 }

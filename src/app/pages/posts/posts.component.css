@@ -1,0 +1,41 @@
+nav.categoryNav {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Clearface', 'Domine', serif;
+    font-size: 2.5em;
+    margin-top: 70px;
+    padding: 100px 0;
+
+    & p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 100;
+        margin-bottom: 0rem;
+    }
+
+    & button {
+        background: none;
+        border: 0;
+        color: inherit;
+        font: inherit;
+        line-height: normal;
+        overflow: visible;
+        padding: 10px;
+        transition: 0.3s;
+
+        &:hover {
+            text-decoration: underline;
+            color: rgb(5, 18, 119)
+        }
+    }
+}
+
+section.sectionPosts {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+
+lista-posts {
+    width: 33.333vw;
+}

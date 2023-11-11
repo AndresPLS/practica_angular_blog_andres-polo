@@ -1,1 +1,13 @@
-<p>posts works!</p>
+<nav class="categoryNav">
+    <button type="button">Abstrac</button>
+    <p>/</p>
+    <button type="button">Mountain</button>
+    <p>/</p>
+    <button type="button">Island</button>
+    <p>/</p>
+    <button type="button">Desert</button>
+</nav>
+
+<section class="sectionPosts">
+    <lista-posts *ngFor="let post of arrPosts" [onePost]="post"></lista-posts>
+</section>
