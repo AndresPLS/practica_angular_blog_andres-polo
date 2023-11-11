@@ -4,6 +4,6 @@ export interface IPost {
     autor: string;
     imagen: string;
     texto: string;
-    fecha: Date;
+    fecha: string;
     categoria: string;
 }
