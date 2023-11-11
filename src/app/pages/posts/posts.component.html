@@ -8,6 +8,9 @@
     <button type="button">Desert</button>
 </nav>
 
-<section class="sectionPosts">
-    <lista-posts *ngFor="let post of arrPosts" [onePost]="post"></lista-posts>
-</section>
+
+<div class="container-fluid">
+    <section class="sectionPosts row ">
+        <lista-posts *ngFor="let post of arrPosts" [onePost]="post" class="col-4"></lista-posts>
+    </section>
+</div>

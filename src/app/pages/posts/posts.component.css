@@ -32,10 +32,16 @@ nav.categoryNav {
 
 section.sectionPosts {
     display: flex;
-    padding: 30px;
-    gap: 20px;
+    padding: 20px;
+    /* gap: 20px; */
 }
 
-lista-posts {
-    width: 33.333vw;
+
+.row {
+    --bs-gutter-x: 1.0rem;
 }
+
+
+/* lista-posts {
+    width: 33.333vw;
+} */
