@@ -17,4 +17,6 @@ export class PostsComponent {
     this.arrPosts = this.postsService.getAll();
   }
 
+
+
 }

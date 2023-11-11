@@ -8,6 +8,7 @@ import { NewComponent } from './pages/new/new.component';
 import { ListaPostsComponent } from './components/lista-posts/lista-posts.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { DetallePostComponent } from './pages/detalle-post/detalle-post.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     NewComponent,
     ListaPostsComponent,
     FormularioComponent,
-    NavBarComponent
+    NavBarComponent,
+    DetallePostComponent
   ],
   imports: [
     BrowserModule,

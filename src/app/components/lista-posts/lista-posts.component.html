@@ -1,5 +1,5 @@
 <article class="post">
-    <div class="postContainer">
+    <div class="postContainer" [routerLink]="['/posts', onePost.id]">
         <h3 class="postTitulo">{{onePost.titulo}}</h3>
         <figure>
             <img [src]="onePost.imagen" alt="category figure">
