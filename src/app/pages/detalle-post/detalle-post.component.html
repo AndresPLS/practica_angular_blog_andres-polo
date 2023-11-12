@@ -1,1 +1,44 @@
-<p>detalle-post works!</p>
+<div class="pAbsolute">
+    <div class="infoFixed">
+        <div>
+            <h5>Published</h5>
+            <p>{{post?.fecha}}</p>
+        </div>
+        <div>
+            <h5>Autor</h5>
+            <p>{{post?.autor}}</p>
+        </div>
+        <div>
+            <h5>Location</h5>
+            <p>{{post?.ubicacion}}</p>
+        </div>
+        <div>
+            <h5>Category</h5>
+            <p>{{post?.categoria}}</p>
+        </div>
+
+    </div>
+
+    <div class="containerPost">
+
+
+        <figure class="maxwidth">
+            <img [src]="post?.imagen" alt="category figure">
+        </figure>
+
+
+        <h3 class="maxwidth">Tamandúa es una agencia de ecoturismo situada en una pequeña localidad de la zona oeste de
+            Panamá.</h3>
+
+        <div class="maxwidth pTexto">
+            <p>{{post?.texto}}</p>
+            <br>
+            <p>{{post?.texto}}</p>
+        </div>
+
+        <br><br>
+
+        <h2 class="postTitulo">{{post?.titulo}}</h2>
+
+    </div>
+</div>

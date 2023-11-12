@@ -10,14 +10,31 @@ import { PostsService } from 'src/app/services/posts.service';
 })
 export class DetallePostComponent {
 
-  post!: IPost;
+  post: IPost | undefined
 
   activatedRoute = inject(ActivatedRoute);
   postsServices = inject(PostsService);
 
+  constructor() {
+    this.post = {
+      id: 0,
+      titulo: '',
+      subtitulo: '',
+      autor: '',
+      imagen: '',
+      texto: '',
+      fecha: '',
+      categoria: '',
+      ubicacion: '',
+    }
+
+  }
+
   ngOnInit() {
 
-
+    this.activatedRoute.params.subscribe(params => {
+      this.post = this.postsServices.getById(parseInt(params['postId']));
+    })
 
   }
 
