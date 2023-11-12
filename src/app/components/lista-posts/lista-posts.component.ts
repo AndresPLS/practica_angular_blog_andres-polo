@@ -18,6 +18,7 @@ export class ListaPostsComponent {
     this.onePost = {
       id: 0,
       titulo: '',
+      subtitulo: '',
       autor: '',
       imagen: '',
       texto: '',

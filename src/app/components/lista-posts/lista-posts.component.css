@@ -1,13 +1,14 @@
-.post {
-    margin-top: 1rem;
-}
-
 .postContainer {
+
+    transition: 0.3s;
 
     & figure {
         margin: 0 0 8px 0;
-    }
 
+        & img {
+            border-radius: 2vw;
+        }
+    }
 
     & h3 {
         font-family: 'Inter', sans-serif;
@@ -15,27 +16,31 @@
         font-size: 1.4em;
         text-transform: uppercase;
         margin-bottom: 0rem;
-
     }
 
     & h4 {
         font-family: 'Inter', sans-serif;
         font-weight: 400;
-        font-size: 1.4em;
-        text-transform: uppercase;
+        font-size: 1.8em;
+
         margin-bottom: 0rem;
+        margin-top: 0.6rem;
+        margin-left: 2px;
     }
 
     & p {
-        font-size: 0.7em;
+        font-size: 0.8em;
         color: rgb(93, 93, 93);
-        font-weight: 300;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-left: 2px;
     }
 
     &:hover {
         cursor: pointer;
-    }
 
+        filter: brightness(115%);
+    }
 }
 
 .postTitulo {

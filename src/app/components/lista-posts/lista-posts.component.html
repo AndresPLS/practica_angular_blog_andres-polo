@@ -1,12 +1,14 @@
 <article class="post">
     <div class="postContainer" [routerLink]="['/posts', onePost.id]">
-        <h3 class="postTitulo">{{onePost.titulo}}</h3>
+
         <figure>
             <img [src]="onePost.imagen" alt="category figure">
         </figure>
 
+        <!-- <h3 class="postTitulo">{{onePost.titulo}}</h3> -->
+
         <div class="postSubtitulo">
-            <h4>{{onePost.autor}}</h4>
+            <h4>{{onePost.titulo}}</h4>
             <p>{{onePost.ubicacion}}</p>
         </div>
     </div>
