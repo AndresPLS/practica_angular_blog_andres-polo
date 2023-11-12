@@ -4,41 +4,67 @@ nav.menuPrincipal {
     justify-content: space-between;
     width: 100vw;
     padding: 20px 20px;
-    background-color: white;
+    /* background-color: white; */
     text-transform: uppercase;
     transition: 0.5s;
+    margin: 0;
+    padding: 0;
+}
 
-    & ul {
-        list-style: none;
-        display: flex;
-        padding-left: 0rem;
-        margin-bottom: 0rem;
+ul.ulSub {
+    padding: 20px 30px;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
 
-        & li {
-            padding: 0 10px;
-            transition: 0.5s;
 
-            &:hover {
-                cursor: pointer;
-                text-decoration-line: underline;
-            }
-        }
-    }
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.08rem;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom left;
+    transition: transform 0.33s cubic-bezier(.65, .05, .36, 1);
+
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
 }
 
 .titleNav {
     display: flex;
     justify-content: center;
+
 }
+
 
 h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
     position: fixed;
+    color: white;
+    mix-blend-mode: difference;
+    --webkit-font-smoothing: antialiased;
 
     padding-top: 20px;
     text-transform: uppercase;
+
 
     transition: 0.5s;
 
