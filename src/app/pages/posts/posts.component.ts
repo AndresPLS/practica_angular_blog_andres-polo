@@ -17,6 +17,12 @@ export class PostsComponent {
     this.arrPosts = this.postsService.getAll();
   }
 
+  onClickCategory(pCategory: string) {
+    this.arrPosts = this.postsService.getByCategoria(pCategory);
+  }
 
+  ngAfterViewChecked() {
+    this.arrPosts = this.postsService.getAll();
+  }
 
 }

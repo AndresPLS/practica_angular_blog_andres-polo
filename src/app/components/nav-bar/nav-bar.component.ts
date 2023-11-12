@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { IPost } from 'src/app/interfaces/post-interface';
+import { PostsService } from 'src/app/services/posts.service';
 
 @Component({
   selector: 'nav-bar',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
+
+
 
 }
