@@ -9,6 +9,7 @@ import { ListaPostsComponent } from './components/lista-posts/lista-posts.compon
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { DetallePostComponent } from './pages/detalle-post/detalle-post.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetallePostComponent } from './pages/detalle-post/detalle-post.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

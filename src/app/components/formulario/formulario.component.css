@@ -1,0 +1,68 @@
+.containerForm {
+    padding: 30px 0 100px 0;
+    max-height: 70%;
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+h2 {
+
+    padding: 130px 0px;
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+
+    color: rgb(56, 56, 56);
+}
+
+input {
+
+    border-color: var(--grey-secondary-color);
+
+
+    &.editLine {
+        border-radius: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        border-bottom-color: var(--grey-secondary-color);
+    }
+}
+
+.calendarCheckbox {
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.bloqueSeparado {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+textarea {
+    border-color: var(--grey-secondary-color);
+}
+
+.btn-success {
+    margin-top: 10px;
+    background-color: rgb(56, 56, 56);
+    border-color: rgb(56, 56, 56);
+
+    &:hover {
+        color: var(--bs-btn-hover-color);
+        background-color: rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);
+    }
+}
+
+
+input.editLine:focus,
+input.editLine:focus {
+
+    outline: 0;
+    outline-width: 1px;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}

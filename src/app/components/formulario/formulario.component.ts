@@ -16,14 +16,22 @@ export class FormularioComponent {
 
   constructor() {
     this.formulario = new FormGroup({
-
       titulo: new FormControl(),
       subtitulo: new FormControl(),
-
+      autor: new FormControl(),
+      imagen: new FormControl(),
+      texto: new FormControl(),
+      fecha: new FormControl(),
+      categoria: new FormControl(),
+      ubicacion: new FormControl(),
 
     })
 
 
+  }
+
+  addFormulario() {
+    this.PostService.metodoCreate(this.formulario.value)
   }
 
 }

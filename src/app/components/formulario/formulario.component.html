@@ -1,1 +1,57 @@
-<p>formulario works!</p>
+<div class="containerForm">
+    <h2>New post</h2>
+
+
+    <form [formGroup]="formulario" (ngSubmit)="addFormulario()">
+        <div class="row calendarCheckbox ">
+
+            <div class="mb-4  col-md-4 col-xs-12">
+                <label class="form-label">Título</label>
+                <input type="text" class="form-control editLine" formControlName="titulo">
+            </div>
+            <div class="mb-4  col-md-4 col-xs-12">
+                <label class="form-label">Autor</label>
+                <input type="text" class="form-control editLine" formControlName="autor">
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="mb-4 col-xl-4 col-md-4">
+                <label class="form-label">Ubicación</label>
+                <input type="text" class="form-control  editLine" formControlName="ubicacion">
+            </div>
+            <div class="mb-4 col-xl-4 col-md-4">
+                <label class="form-label">Categoría</label>
+                <input type="text" class="form-control  editLine" formControlName="categoria">
+            </div>
+
+            <div class="mb-4 col-xl-4 col-md-4">
+                <label class="form-label">Fecha</label>
+                <input type="date" class="form-control  editLine" formControlName="fecha">
+            </div>
+        </div>
+
+        <div>
+            <div class="bloqueSeparado">
+                <div class="mb-4">
+                    <label class="form-label editLine">Subtítulo</label>
+                    <input type="text" class="form-control editLine" formControlName="subtitulo">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label editLine">URL de la imagen</label>
+                    <input type="text" class="form-control editLine" formControlName="imagen">
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="Textarea1" class="form-label">Texto del post</label>
+                <textarea class="form-control" id="Textarea1" rows="8" formControlName="texto"
+                    formControlName="texto"></textarea>
+            </div>
+        </div>
+
+        <button class="btn btn-success">Send</button>
+    </form>
+
+</div>
