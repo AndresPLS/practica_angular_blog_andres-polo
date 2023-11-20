@@ -11,7 +11,7 @@ export class PostsComponent {
 
   arrPosts: IPost[] = [];
 
-  postsService = inject(PostsService)
+  postsService = inject(PostsService);
 
   ngOnInit() {
     this.arrPosts = this.postsService.getAll();
